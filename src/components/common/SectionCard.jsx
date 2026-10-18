@@ -1,0 +1,1 @@
+export default function SectionCard({title,subtitle,actions,children,className=""}){return <section className={`section-card ${className}`}>{(title||subtitle||actions)&&<div className="section-card-header"><div>{title&&<h2>{title}</h2>}{subtitle&&<p>{subtitle}</p>}</div>{actions}</div>}{children}</section>}

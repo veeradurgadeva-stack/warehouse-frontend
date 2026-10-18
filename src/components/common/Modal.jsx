@@ -1,0 +1,1 @@
+export default function Modal({title,onClose,children,footer}){return <div className="modal-backdrop" onMouseDown={e=>{if(e.target===e.currentTarget)onClose()}}><div className="modal-card"><div className="modal-header"><h2>{title}</h2><button className="icon-button" onClick={onClose}>✕</button></div>{children}{footer&&<div className="modal-footer">{footer}</div>}</div></div>}
