@@ -2,9 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 import StatusBadge from "../components/common/StatusBadge";
 import Modal from "../components/common/Modal";
-
 const API = "http://localhost:8080/api";
-
 const mapSupplier = (s) => ({
   supplierId: String(s.SUPPLIER_ID ?? s.supplierId ?? ""),
   supplierName: s.SUPPLIER_NAME ?? s.supplierName ?? "",
